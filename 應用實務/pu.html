@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa71bbffe7db3c738a34425eac1c9513 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa71bbffe7db3c738a34425eac1c9513" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa71bbffe7db3c738a34425eac1c9513 = L.map(
+                "map_aa71bbffe7db3c738a34425eac1c9513",
+                {
+                    center: [23.973918, 120.979692],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_78333fe9833210680ce4c7e23f3af685 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aa71bbffe7db3c738a34425eac1c9513);
+        
+    
+            var marker_1b68d0762f03c8cc202673456b54b79c = L.marker(
+                [25.033964, 121.564468],
+                {}
+            ).addTo(map_aa71bbffe7db3c738a34425eac1c9513);
+        
+    
+            var icon_e236f7c474db24ce1d2c5bedfcdaa4f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "build", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1b68d0762f03c8cc202673456b54b79c.setIcon(icon_e236f7c474db24ce1d2c5bedfcdaa4f9);
+        
+    
+        var popup_9a03e0bbe406c71b1d89f9599011c991 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_251df8772cb0588002f3e56124c7d8d7 = $(`<div id="html_251df8772cb0588002f3e56124c7d8d7" style="width: 100.0%; height: 100.0%;"><a href="https://www.taipei-101.com.tw">靜宜大學/a></div>`)[0];
+                popup_9a03e0bbe406c71b1d89f9599011c991.setContent(html_251df8772cb0588002f3e56124c7d8d7);
+            
+        
+
+        marker_1b68d0762f03c8cc202673456b54b79c.bindPopup(popup_9a03e0bbe406c71b1d89f9599011c991)
+        ;
+
+        
+    
+</script>
+</html>
